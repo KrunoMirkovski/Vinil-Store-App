@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import { BsFillVinylFill } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
+import { FaUser } from "react-icons/fa6";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
 const Navbar = () => {
   return (
@@ -20,7 +22,13 @@ const Navbar = () => {
       </div>
 
       {/*right_div*/}
-      <div>Nav links</div>
+      <div className="relative flex items-center md:space-x-3 space-x-2">
+      <FaUser className="size-6"/>
+      <Link to='/cart' className="bg-primary p-1 sm:px-6 px-2 py-1 flex items-center">
+      <HiOutlineShoppingBag color="white" className="size-4"/>
+      <span className="text-white px-1 text-sm font-bold sm:ml-1">0</span>
+      </Link>
+      </div>
     </nav>
    </header>
   )
