@@ -3,10 +3,22 @@ import { BsFillVinylFill } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 import { FaUser } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import avatar from "../assets/avatar.png"
+import { useState } from "react";
+
+const dropdownMenu = [
+  {name: "Dashboard", href:"/dashboard"},
+  {name: "Orders", href:"/orders"},
+  {name: "Shopping Cart", href:"/shoppingcart"},
+  {name: "Check Out", href:"/checkout"},
+]
 
 const Navbar = () => {
 
-  const currentUser = false;
+  const currentUser = true;
+  const [dropDownOpen, setDropDownOpen] = useState(false)
+  {/*console.log(dropDownOpen)*/}
+
   return (
    <header className="max-w-screen-xl mx-auto px-4 py-5">
     <nav className="flex justify-between items-center">
@@ -29,7 +41,29 @@ const Navbar = () => {
         {/*checking if user is available*/}
         <div>
           {
-            currentUser ?<>user</> : <Link to='/login'><FaUser className="size-6"/></Link>
+            currentUser ?<>
+            <button onClick={() => setDropDownOpen(!dropDownOpen)}>
+              <img src={avatar} alt="user avatar" className={'size-7 h-full pt-2'}/>
+            </button>
+            {/*show dropdown menu*/}
+            {
+              dropDownOpen && (
+                <div className="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-md z-40">
+                    <ul className="py-2">
+                        {
+                            dropdownMenu.map((item) => (
+                                <li key={item.name} onClick={() => setDropDownOpen(false)}>
+                                    <Link to={item.href} className="block px-4 py-2 text-sm hover:bg-gray-100">
+                                        {item.name}
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+            )
+            }
+              </> : <Link to='/login'><FaUser className="size-6"/></Link>
           }
         </div>
 
