@@ -5,6 +5,8 @@ import { FaUser } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
 const Navbar = () => {
+
+  const currentUser = false;
   return (
    <header className="max-w-screen-xl mx-auto px-4 py-5">
     <nav className="flex justify-between items-center">
@@ -23,8 +25,16 @@ const Navbar = () => {
 
       {/*right_div*/}
       <div className="relative flex items-center md:space-x-3 space-x-2">
-      <FaUser className="size-6"/>
-      <Link to='/cart' className="bg-primary p-1 sm:px-6 px-2 py-1 flex items-center">
+
+        {/*checking if user is available*/}
+        <div>
+          {
+            currentUser ?<>user</> : <Link to='/login'><FaUser className="size-6"/></Link>
+          }
+        </div>
+
+      {/* <FaUser className="size-6"/> */}
+      <Link to='/cart' className="bg-secondary p-1 sm:px-6 px-2 py-1 flex items-center">
       <HiOutlineShoppingBag color="white" className="size-4"/>
       <span className="text-white px-1 text-sm font-bold sm:ml-1">0</span>
       </Link>
