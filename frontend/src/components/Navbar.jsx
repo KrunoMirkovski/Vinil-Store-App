@@ -20,7 +20,7 @@ const Navbar = () => {
   {/*console.log(dropDownOpen)*/}
 
   return (
-   <header className="max-w-screen-xl mx-auto px-4 py-5">
+   <header className="max-w-screen-xl mx-auto px-2 py-5">
     <nav className="flex justify-between items-center">
       {/*left_div*/}
       <div className="flex items-center md:12 gap-12"> 
