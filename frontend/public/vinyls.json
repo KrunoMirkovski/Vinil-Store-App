@@ -1,0 +1,672 @@
+[
+    {
+        "id": 1,
+        "title": "All Eyez on Me",
+        "artist": "2Pac",
+        "category": "Hip Hop",
+        "coverImage": "2Pac-All_Eyez_on_Me.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 15.99,
+        "trending": true
+      },
+      {
+        "id": 2,
+        "title": "Get Rich or Die Tryin",
+        "artist": "50 Cent",
+        "category": "Hip Hop",
+        "coverImage": "50Cent-Get_Rich_or_Die_Tryin.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      },
+      {
+        "id": 3,
+        "title": "21",
+        "artist": "Adele",
+        "category": "Funk & Soul",
+        "coverImage": "Adele-21.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 4,
+        "title": "I’m Still in Love With You",
+        "artist": "Al Green",
+        "category": "Funk & Soul",
+        "coverImage": "Al_Green-I’m_Still_in_Love_With_You.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 5,
+        "title": "Back To Black",
+        "artist": "Amy Winehouse",
+        "category": "Funk & Soul",
+        "coverImage": "Amy_Winehouse-Back_To_Black.jpg",
+        "oldPrice": 22.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 6,
+        "title": "Funeral",
+        "artist": "Arcade Fire",
+        "category": "Alternative Rock",
+        "coverImage": "Arcade_Fire-Funeral.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 7,
+        "title": "AM",
+        "artist": "Arctic Monkeys",
+        "category": "Alternative Rock",
+        "coverImage": "Arctic_Monkeys-AM.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 8,
+        "title": "Young, Gifted and Black",
+        "artist": "Aretha Franklin",
+        "category": "Jazz",
+        "coverImage": "Aretha_Franklin-Young,Gifted_and_Black.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 9,
+        "title": "Live at the Regal",
+        "artist": "B.B. King",
+        "category": "Blues",
+        "coverImage": "B.B.King-Live_at_the_Regal.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 10,
+        "title": "Cross Road",
+        "artist": "John Bon Jovi",
+        "category": "Classic Rock",
+        "coverImage": "Bon_Jovi-Cross_Road.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 11,
+        "title": "Born to Run",
+        "artist": "Bruce Springsteen",
+        "category": "Classic Rock",
+        "coverImage": "Bruce_Springsteen-Born_to_Run.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 12,
+        "title": "Heaven or Las Vegas",
+        "artist": "Cocteau Twins",
+        "category": "Alternative Rock",
+        "coverImage": "Cocteau_Twins-Heaven_or_Las_Vegas.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 11.99,
+        "trending": true
+      },
+      {
+        "id": 13,
+        "title": "Random Access Memories",
+        "artist": "Daft Punk",
+        "category": "Electronic",
+        "coverImage": "Daft_Punk-Random_Access_Memories.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      },
+      {
+        "id": 14,
+        "title": "Scary Monsters",
+        "artist": "David Bowie",
+        "category": "Alternative Rock",
+        "coverImage": "David_Bowie-Scary_Monsters.jpg",
+        "oldPrice": 22.99,
+        "newPrice": 19.99,
+        "trending": true
+      },
+      {
+        "id": 15,
+        "title": "Hysteria",
+        "artist": "Def Leppard",
+        "category": "Classic Rock",
+        "coverImage": "Def_Leppard-Hysteria.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 16,
+        "title": "Anthology",
+        "artist": "Diana Ross and the Supremes",
+        "category": "Funk & Soul",
+        "coverImage": "Diana_Ross_and_the_Supremes-Anthology.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 17,
+        "title": "That’s the Way of the World",
+        "artist": "Earth, Wind and Fire",
+        "category": "Funk & Soul",
+        "coverImage": "Earth,_Wind_and_Fire-That’s_the_Way_of_the_World.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 18,
+        "title": "Violence",
+        "artist": "Editors",
+        "category": "Alternative Rock",
+        "coverImage": "Editors-Violence.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      },
+      {
+        "id": 19,
+        "title": "The Eminem Show",
+        "artist": "Eminem",
+        "category": "Hip Hop",
+        "coverImage": "Eminem-The_Eminem_Show.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      },
+      {
+        "id": 20,
+        "title": "Unplugged",
+        "artist": "Eric Clapton",
+        "category": "Classic Rock",
+        "coverImage": "Eric_Clapton-Unplugged.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 21,
+        "title": "Rumours",
+        "artist": "Fleetwood Mac",
+        "category": "Alternative Rock",
+        "coverImage": "Fleetwood_Mac-Rumours.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 22,
+        "title": "In the Wee Small Hours",
+        "artist": "Frank Sinatra",
+        "category": "Jazz",
+        "coverImage": "Frank_Sinatra-In_the_Wee_Small_Hours.jpg",
+        "oldPrice": 23.99,
+        "newPrice": 20.99,
+        "trending": true
+      },
+      {
+        "id": 23,
+        "title": "Faith",
+        "artist": "George Michael",
+        "category": "Pop",
+        "coverImage": "George_Michael-Faith.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 24,
+        "title": "Demon Days",
+        "artist": "Gorillaz",
+        "category": "Electronic",
+        "coverImage": "Gorillaz-Demon_Days.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 25,
+        "title": "Dookie",
+        "artist": "Green Day",
+        "category": "Alternative Rock",
+        "coverImage": "Green_Day-Dookie.jpg",
+        "oldPrice": 14.99,
+        "newPrice": 11.99,
+        "trending": true
+      },
+      {
+        "id": 26,
+        "title": "Appetite for Destruction",
+        "artist": "Guns N' Roses",
+        "category": "Classic Rock",
+        "coverImage": "Guns_N'_Roses-Appetite_for_Destruction.jpg",
+        "oldPrice": 20.99,
+        "newPrice": 17.99,
+        "trending": true
+      },
+      {
+        "id": 27,
+        "title": "Harry’s House",
+        "artist": "Harry Styles",
+        "category": "Pop",
+        "coverImage": "Harry_Styles-Harry’s_House.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      },
+      {
+        "id": 28,
+        "title": "Moanin’ in the Moonlight",
+        "artist": "Howlin’ Wolf",
+        "category": "Blues",
+        "coverImage": "Howlin’_Wolf-Moanin’_in_the_Moonlight.jpg",
+        "oldPrice": 16.99,
+        "newPrice": 13.99,
+        "trending": true
+      },
+      {
+        "id": 29,
+        "title": "Hot Buttered Soul",
+        "artist": "Isaac Hayes",
+        "category": "Funk & Soul",
+        "coverImage": "Isaac_Hayes-Hot_Buttered_Soul.jpg",
+        "oldPrice": 14.99,
+        "newPrice": 11.99,
+        "trending": true
+      },
+      {
+        "id": 30,
+        "title": "Surrealistic Pillow",
+        "artist": "Jefferson Airplane",
+        "category": "Classic Rock",
+        "coverImage": "Jefferson_Airplane-Surrealistic_Pillow.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 31,
+        "title": "A Love Supreme",
+        "artist": "John Coltrane",
+        "category": "Jazz",
+        "coverImage": "John_Coltrane-A_Love_Supreme.jpg",
+        "oldPrice": 24.99,
+        "newPrice": 21.99,
+        "trending": true
+      },
+      {
+        "id": 32,
+        "title": "Continuum",
+        "artist": "John Mayer",
+        "category": "Alternative Rock",
+        "coverImage": "John_Mayer-Continuum.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },
+      {
+        "id": 33,
+        "title": "Blue",
+        "artist": "Joni Mitchell",
+        "category": "Blues",
+        "coverImage": "Joni_Mitchell-Blue.jpg",
+        "oldPrice": 13.99,
+        "newPrice": 10.99,
+        "trending": true
+      },
+      {
+        "id": 34,
+        "title": "Closer",
+        "artist": "Joy Division",
+        "category": "Classic Rock",
+        "coverImage": "Joy_Division-Closer.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 35,
+        "title": "Unknown Pleasures",
+        "artist": "Joy Division",
+        "category": "Classic Rock",
+        "coverImage": "Joy_Divison-Unknown_Pleasures.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 36,
+        "title": "The Miseducation of Lauryn Hill",
+        "artist": "Lauryn Hill",
+        "category": "Funk & Soul",
+        "coverImage": "Lauryn_Hill-The_Miseducation_of_Lauryn_Hill.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      },
+      {
+        "id": 37,
+        "title": "Daydream",
+        "artist": "Mariah Carey",
+        "category": "Pop",
+        "coverImage": "Mariah_Carey-Daydream.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      },
+      {
+        "id": 38,
+        "title": "What's Going Oneam",
+        "artist": "Marvin Gaye",
+        "category": "Funk & Soul",
+        "coverImage": "Marvin_Gaye-What's_Going_On.jpg",
+        "oldPrice": 20.99,
+        "newPrice": 17.99,
+        "trending": true
+      },
+      {
+        "id": 39,
+        "title": "Mezzanine",
+        "artist": "Massive Attack",
+        "category": "Electronic",
+        "coverImage": "Massive_Attack-Mezzanine.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 40,
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "category": "Pop",
+        "coverImage": "Michael_Jackson-Thriller.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 41,
+        "title": "Kind of Blue",
+        "artist": "Miles Davis",
+        "category": "Jazz",
+        "coverImage": "Miles_Davis-Kind_of_Blue.jpg",
+        "oldPrice": 25.99,
+        "newPrice": 22.99,
+        "trending": true
+      },
+      {
+        "id": 42,
+        "title": "The Infamous",
+        "artist": "Mobb Deep",
+        "category": "Hip Hop",
+        "coverImage": "Mobb_Deep-The_Infamous.jpg",
+        "oldPrice": 20.99,
+        "newPrice": 17.99,
+        "trending": true
+      },
+      {
+        "id": 43,
+        "title": "Nevermind",
+        "artist": "Nirvana",
+        "category": "Alternative Rock",
+        "coverImage": "Nirvana-Nevermind.jpg",
+        "oldPrice": 22.99,
+        "newPrice": 19.99,
+        "trending": true
+      },
+      {
+        "id": 44,
+        "title": "Come Away with Me",
+        "artist": "Norah Jones",
+        "category": "Jazz",
+        "coverImage": "Norah_Jones-Come_Away_with_Me.jpg",
+        "oldPrice": 22.99,
+        "newPrice": 19.99,
+        "trending": true
+      },
+      {
+        "id": 45,
+        "title": "Definitely Maybe",
+        "artist": "Oasis",
+        "category": "Alternative Rock",
+        "coverImage": "Oasis-Definitely_Maybe.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 46,
+        "title": "The Wall",
+        "artist": "Pink Floyd",
+        "category": "Classic Rock",
+        "coverImage": "Pink_Floyd-The_Wall.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 47,
+        "title": "A Night at the Opera",
+        "artist": "Queen",
+        "category": "Classic Rock",
+        "coverImage": "Queen-A_Night_at_the_Opera.jpg",
+        "oldPrice": 21.99,
+        "newPrice": 18.99,
+        "trending": true
+      },
+      {
+        "id": 48,
+        "title": "Rocket to Russia",
+        "artist": "Ramones",
+        "category": "Classic Rock",
+        "coverImage": "Ramones-Rocket_to_Russia.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },
+      {
+        "id": 49,
+        "title": "Californication",
+        "artist": "Red Hot Chili Peppers",
+        "category": "Alternative Rock",
+        "coverImage": "Red_Hot_Chili_Peppers-Californication.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      },  
+      {
+        "id": 50,
+        "title": "King of the Delta Blues Singers",
+        "artist": "Robert Johnson",
+        "category": "Blues",
+        "coverImage": "Robert_Johnson-King_of_the_Delta_Blues_Singers.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },   
+      {
+        "id": 51,
+        "title": "First Take",
+        "artist": "Roberta Flack",
+        "category": "Funk & Soul",
+        "coverImage": "Roberta_Flack-First_Take.jpg",
+        "oldPrice": 15.99,
+        "newPrice": 12.99,
+        "trending": true
+      },   
+      {
+        "id": 52,
+        "title": "Moving Pictures",
+        "artist": "Rush",
+        "category": "Classic Rock",
+        "coverImage": "Rush-Moving_Pictures.jpg",
+        "oldPrice": 14.99,
+        "newPrice": 11.99,
+        "trending": true
+      },   
+      {
+        "id": 53,
+        "title": "Portrait of a Legend",
+        "artist": "Sam Cooke",
+        "category": "Funk & Soul",
+        "coverImage": "Sam_Cooke-Portrait_of_a_Legend.jpg",
+        "oldPrice": 14.99,
+        "newPrice": 11.99,
+        "trending": true
+      },   
+      {
+        "id": 54,
+        "title": "Abraxas",
+        "artist": "Santana",
+        "category": "Classic Rock",
+        "coverImage": "Santana-Abraxas.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      },   
+      {
+        "id": 55,
+        "title": "Aja",
+        "artist": "Steely Dan",
+        "category": "Classic Rock",
+        "coverImage": "Steely_Dan-Aja.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      },  
+      {
+        "id": 56,
+        "title": "Music of My Mind",
+        "artist": "Stevie Wonder",
+        "category": "Funk & Soul",
+        "coverImage": "Stevie_Wonder-Music_of_My_Mind.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 57,
+        "title": "Abbey Road",
+        "artist": "The Beatles",
+        "category": "Classic Rock",
+        "coverImage": "The_Beatles-Abbey_Road.jpg",
+        "oldPrice": 20.99,
+        "newPrice": 17.99,
+        "trending": true
+      }, 
+      {
+        "id": 58,
+        "title": "London Calling",
+        "artist": "The Clash",
+        "category": "Classic Rock",
+        "coverImage": "The_Clash-London_Calling.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 59,
+        "title": "Disintegration",
+        "artist": "The Cure",
+        "category": "Classic Rock",
+        "coverImage": "The_Cure-Disintegration.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 60,
+        "title": "Let It Bleed",
+        "artist": "The Rolling Stones",
+        "category": "Classic Rock",
+        "coverImage": "The_Rolling_Stones-Let_It_Bleed.jpg",
+        "oldPrice": 20.99,
+        "newPrice": 17.99,
+        "trending": true
+      }, 
+      {
+        "id": 61,
+        "title": "Things Fall Apart",
+        "artist": "The Roots",
+        "category": "Funk & Soul",
+        "coverImage": "The_Roots-Things_Fall_Apart.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 62,
+        "title": "The Queen Is Dead",
+        "artist": "The Smiths",
+        "category": "Alternative Rock",
+        "coverImage": "The_Smiths-The_Queen_Is_Dead.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 63,
+        "title": "Anthology",
+        "artist": "The Temptations",
+        "category": "Funk & Soul",
+        "coverImage": "The_Temptations-Anthology.jpg",
+        "oldPrice": 18.99,
+        "newPrice": 15.99,
+        "trending": true
+      }, 
+      {
+        "id": 64,
+        "title": "Beauty Behind the Madness",
+        "artist": "The Weeknd",
+        "category": "Funk & Soul",
+        "coverImage": "The_Weeknd-Beauty_Behind_the_Madness.jpg",
+        "oldPrice": 17.99,
+        "newPrice": 14.99,
+        "trending": true
+      }, 
+      {
+        "id": 65,
+        "title": "The Joshua Tree",
+        "artist": "U2",
+        "category": "Classic Rock",
+        "coverImage": "U2-The_Joshua_Tree.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      }, 
+      {
+        "id": 66,
+        "title": "Whitney",
+        "artist": "Whitney Houston",
+        "category": "Pop",
+        "coverImage": "Whitney_Houston-Whitney.jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      }, 
+      {
+        "id": 67,
+        "title": "Enter the Wu-Tang (36 Chambers)",
+        "artist": "Wu-Tang Clan",
+        "category": "Hip Hop",
+        "coverImage": "Wu-Tang_Clan-Enter_the_Wu-Tang_(36_Chambers).jpg",
+        "oldPrice": 19.99,
+        "newPrice": 16.99,
+        "trending": true
+      } 
+]
