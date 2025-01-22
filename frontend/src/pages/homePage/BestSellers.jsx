@@ -1,4 +1,6 @@
 import {useEffect, useState} from 'react'
+import VinylCard from '../vinylsPage/vinylCard';
+import PropTypes from 'prop-types';
 
 const genres = ["Choose a genre", "Alternative Rock", "Blues", "Classic Rock", "Electronic", "Funk & Soul", "Hip Hop", "Jazz"]
 
@@ -45,17 +47,33 @@ const BestSellers = () => {
     {/* Display Filtered Vinyls */}
 
         <div className="space-y-4">
-            {filteredVinyls.map((vinyl) => (
+            {filteredVinyls.map((vinyl, index) => (
 
-                <div key={vinyl.id} className="p-4 border rounded-md shadow"> 
-                    <h3 className="text-lg font-semibold">{vinyl.title}</h3>
-                    <p className="text-sm text-gray-500 capitalize">{vinyl.artist}</p>
-                </div>
+                // <div key={vinyl.id} className="p-4 border rounded-md shadow"> 
+                //     <h3 className="text-lg font-semibold">{vinyl.title}</h3>
+                //     <p className="text-sm text-gray-500 capitalize">{vinyl.artist}</p>
+                // </div>
+
+                <VinylCard key={index} vinyl={vinyl}/>
                 ))
             }
         </div>
     </div>
   )
 }
+
+BestSellers.propTypes = {
+    vinyl: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+        artist: PropTypes.string.isRequired,
+        coverImage: PropTypes.string.isRequired,
+        newPrice: PropTypes.number.isRequired,
+        oldPrice: PropTypes.number.isRequired,
+        genre: PropTypes.string.isRequired,
+      })
+    ),
+  };
 
 export default BestSellers

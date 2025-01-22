@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#002C54",
+        primary: "#851203",
         secondary: "#C5001A",
         blackBG: "#FDF6F6",
-        favorite: "#FFB51D",
+        favorite: "#031954",
       },
       fontFamily: {
         primary: ["Inter", "serif"],
