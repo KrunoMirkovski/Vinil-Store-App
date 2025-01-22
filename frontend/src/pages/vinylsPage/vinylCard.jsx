@@ -7,9 +7,9 @@ const VinylCard = ({vinyl}) => {
   return (
     <div className=" rounded-lg transition-shadow duration-300">
   <div
-    className="flex flex-col sm:flex-row sm:items-center sm:h-68  sm:justify-center gap-5"
+    className="flex flex-col sm:flex-row sm:items-center sm:h-56  sm:justify-center gap-4"
   >
-    <div className="sm:h-68 sm:flex-shrink-0 border rounded-md">
+    <div className="sm:h-56 sm:flex-shrink-0 border rounded-md">
     <Link to={`/vinyls/${vinyl.id}`}>
         <img
           src={`${GetImgUrl(vinyl?.coverImage)}`}
@@ -21,13 +21,13 @@ const VinylCard = ({vinyl}) => {
 
     <div>
       <Link to={`/vinyls/${vinyl.id}`}>
-        <h3 className=" w-60 text-2xl font-semibold hover:text-secondary  mb-4">{vinyl?.title}</h3>
+        <h3 className=" w-56 text-xl font-semibold hover:text-secondary  mb-7">{vinyl?.title}</h3>
       </Link>
       <p className="text-gray-700 mb-4">{vinyl?.artist}</p>
       <p className="font-secondary mb-4">
-        ${vinyl?.newPrice} <span className="line-through font-normal ml-2">${vinyl?.oldPrice}</span>
+        ${vinyl?.newPrice} <span className="line-through font-normal ml-3">${vinyl?.oldPrice}</span>
       </p>
-      <button className="btn-primary px-6 space-x-1 flex items-center gap-1 text-white">
+      <button className="btn-primary px-5 space-x-1 flex items-center text-white">
         <PiShoppingCartSimpleBold />
         <span>Add to Cart</span>
       </button>

@@ -2,6 +2,17 @@ import {useEffect, useState} from 'react'
 import VinylCard from '../vinylsPage/vinylCard';
 import PropTypes from 'prop-types';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
+
+
 const genres = ["Choose a genre", "Alternative Rock", "Blues", "Classic Rock", "Electronic", "Funk & Soul", "Hip Hop", "Jazz"]
 
 const BestSellers = () => {
@@ -33,9 +44,9 @@ const BestSellers = () => {
         <h2 className='text-2xl font-semibold mb-5'>BestSellers</h2>
 
     {/*genre filter*/}
-        <div className='mb-48 flex items-center'>
+        <div className='mb-16 flex items-center'>
             <select 
-            onChange={(e) => setselectedGenre(e.target.value)} name="genre" id="genre" className='border bg-[#d2d2d2] border-gray-400 rounded-md px-3 py-3 focus:outline-none'>
+            onChange={(e) => setselectedGenre(e.target.value)} name="genre" id="genre" className='border bg-[#efefef] border-gray-400 rounded-md px-3 py-3 focus:outline-none'>
               {
                 genres.map((genre, index) => (
                     <option key={index} value={genre}>{genre}</option>
@@ -44,20 +55,49 @@ const BestSellers = () => {
             </select>
         </div>
 
-    {/* Display Filtered Vinyls */}
+        <Swiper
+        slidesPerView={1}
+        spaceBetween={40}
+        navigation={true}
 
-        <div className="space-y-4">
-            {filteredVinyls.map((vinyl, index) => (
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          1180: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        
+            {
+                filteredVinyls.length > 0 && filteredVinyls.map((vinyl, index) => (
 
-                // <div key={vinyl.id} className="p-4 border rounded-md shadow"> 
-                //     <h3 className="text-lg font-semibold">{vinyl.title}</h3>
-                //     <p className="text-sm text-gray-500 capitalize">{vinyl.artist}</p>
-                // </div>
+                 // <div key={vinyl.id} className="p-4 border rounded-md shadow"> 
+                 //     <h3 className="text-lg font-semibold">{vinyl.title}</h3>
+                 //     <p className="text-sm text-gray-500 capitalize">{vinyl.artist}</p>
+                 // </div>
 
-                <VinylCard key={index} vinyl={vinyl}/>
+                 <SwiperSlide key={index} ><VinylCard vinyl={vinyl}/></SwiperSlide>
+                 
                 ))
             }
-        </div>
+      </Swiper>
+
+    {/* Display Filtered Vinyls */}
+
     </div>
   )
 }
