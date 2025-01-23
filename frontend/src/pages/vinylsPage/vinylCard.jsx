@@ -7,28 +7,28 @@ const VinylCard = ({vinyl}) => {
   return (
     <div className=" rounded-lg transition-shadow duration-300">
   <div
-    className="flex flex-col sm:flex-row sm:items-center sm:h-56  sm:justify-center gap-4"
+    className=" border-2 border-red-800 rounded-lg pl-2 flex flex-col sm:flex-row sm:items-center sm:h-52  sm:justify-center gap-2 w-[92%] mx-auto"
   >
-    <div className="sm:h-56 sm:flex-shrink-0 border rounded-md">
+    <div className="sm:w-40 sm:h-40 flex-shrink-0 rounded-md overflow-hidden">
     <Link to={`/vinyls/${vinyl.id}`}>
         <img
           src={`${GetImgUrl(vinyl?.coverImage)}`}
           alt=""
-          className="w-full bg-cover p-3 rounded-md cursor-pointer hover:scale-105 transition-all duration-200"
+          className="w-full h-full bg-cover p-2 rounded-md cursor-pointer hover:scale-105 transition-all duration-200"
         />
       </Link>
     </div>
 
-    <div>
+    <div className="flex flex-col flex-grow">
       <Link to={`/vinyls/${vinyl.id}`}>
-        <h3 className=" w-56 text-xl font-semibold hover:text-secondary  mb-7">{vinyl?.title}</h3>
+        <h3 className=" w-70 text-lg font-bold hover:text-secondary  mb-2 leading-snug">{vinyl?.title}</h3>
       </Link>
-      <p className="text-gray-700 mb-4">{vinyl?.artist}</p>
-      <p className="font-secondary mb-4">
+      <p className="text-gray-500 text-base mb-5">{vinyl?.artist}</p>
+      <p className="font-secondary text-sm mb-2">
         ${vinyl?.newPrice} <span className="line-through font-normal ml-3">${vinyl?.oldPrice}</span>
       </p>
-      <button className="btn-primary px-5 space-x-1 flex items-center text-white">
-        <PiShoppingCartSimpleBold />
+      <button className="btn-primary w-auto px-3 py-1 text-sm space-x-1 flex items-center text-white rounded-md">
+        <PiShoppingCartSimpleBold className="text-base"/>
         <span>Add to Cart</span>
       </button>
     </div>

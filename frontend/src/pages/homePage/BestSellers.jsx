@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react'
 import VinylCard from '../vinylsPage/vinylCard';
-import PropTypes from 'prop-types';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -40,11 +39,11 @@ const BestSellers = () => {
 
 
   return (
-    <div className='py-6'>
-        <h2 className='text-2xl font-semibold mb-5'>BestSellers</h2>
+    <div className='py-6 mb-12'>
+        <h2 className='text-3xl font-semibold mb-5 pl-6'>BestSellers</h2>
 
     {/*genre filter*/}
-        <div className='mb-16 flex items-center'>
+        <div className='mb-16 flex items-center pl-6'>
             <select 
             onChange={(e) => setselectedGenre(e.target.value)} name="genre" id="genre" className='border bg-[#efefef] border-gray-400 rounded-md px-3 py-3 focus:outline-none'>
               {
@@ -71,11 +70,11 @@ const BestSellers = () => {
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
           1180: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
         }}
         modules={[Pagination, Navigation]}
@@ -101,19 +100,5 @@ const BestSellers = () => {
     </div>
   )
 }
-
-BestSellers.propTypes = {
-    vinyl: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        title: PropTypes.string.isRequired,
-        artist: PropTypes.string.isRequired,
-        coverImage: PropTypes.string.isRequired,
-        newPrice: PropTypes.number.isRequired,
-        oldPrice: PropTypes.number.isRequired,
-        genre: PropTypes.string.isRequired,
-      })
-    ),
-  };
 
 export default BestSellers
