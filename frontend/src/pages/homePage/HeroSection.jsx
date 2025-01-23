@@ -1,9 +1,8 @@
-import React from 'react'
 import HeroImgVinyls from "../../assets/HeroImgVinyls.jpg"
 
 const HeroSection = () => {
   return (
-    <div className='flex flex-col md:flex-row px-20 py-8 justify-between items-center gap-10'>
+    <div className='flex flex-col md:flex-row px-12 py-8 justify-between items-center gap-10'>
       <div className='md:w-1/2 w-full flex items-center md:justify-end'>
         <img src={HeroImgVinyls} alt="hero_image" className='rounded-[16px]'/>
       </div>

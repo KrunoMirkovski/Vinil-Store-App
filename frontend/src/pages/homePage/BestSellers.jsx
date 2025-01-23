@@ -39,7 +39,7 @@ const BestSellers = () => {
 
 
   return (
-    <div className='py-6 mb-12'>
+    <div className='py-6 px-6 mb-12'>
         <h2 className='text-3xl font-semibold mb-5 pl-6'>BestSellers</h2>
 
     {/*genre filter*/}

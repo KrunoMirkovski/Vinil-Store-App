@@ -23,8 +23,8 @@ const StaffPicks = () => {
         }, [])
 
   return (
-    <div>
-         <h2 className='text-3xl font-semibold mb-5 pl-6 mb-12'>Staff Picks For You</h2>
+    <div className='py-6 px-6 mb-12'>
+         <h2 className='text-3xl font-semibold pl-6 mb-12'>Staff Picks For You</h2>
 
                 <Swiper
                  slidesPerView={1}
