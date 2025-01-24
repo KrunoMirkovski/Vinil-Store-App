@@ -24,7 +24,8 @@ const StaffPicks = () => {
 
   return (
     <div className='py-6 px-6 mb-12'>
-         <h2 className='text-3xl font-semibold pl-6 mb-12'>Staff Picks For You</h2>
+         <h2 className='text-3xl font-bold pl-6 mb-2'>Staff Picks For You</h2>
+         <div className='w-72 h-[4px] bg-primary ml-6 mb-8'></div>
 
                 <Swiper
                  slidesPerView={1}
@@ -46,7 +47,7 @@ const StaffPicks = () => {
                    },
                    1180: {
                      slidesPerView: 3,
-                     spaceBetween: 20,
+                     spaceBetween: 10,
                    },
                  }}
                  modules={[Pagination, Navigation]}

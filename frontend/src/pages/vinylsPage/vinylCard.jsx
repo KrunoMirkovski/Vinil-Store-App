@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 const VinylCard = ({vinyl}) => {
   return (
-    <div className=" rounded-lg transition-shadow duration-300">
+    <div className="rounded-lg pl-1 transition-shadow duration-300">
   <div
-    className=" border-2 border-red-800 rounded-lg pl-2 flex flex-col sm:flex-row sm:items-center sm:h-52  sm:justify-center gap-2 w-[92%] mx-auto"
+    className=" border-2 border-red-800 rounded-lg pl-1 flex flex-col sm:flex-row sm:items-center sm:h-52  sm:justify-center gap-1 w-[86%] mx-auto"
   >
-    <div className="sm:w-40 sm:h-40 flex-shrink-0 rounded-md overflow-hidden">
+    <div className="sm:w-44 sm:h-44 flex-shrink rounded-md overflow-hidden">
     <Link to={`/vinyls/${vinyl.id}`}>
         <img
           src={`${GetImgUrl(vinyl?.coverImage)}`}
@@ -19,17 +19,17 @@ const VinylCard = ({vinyl}) => {
       </Link>
     </div>
 
-    <div className="flex flex-col flex-grow">
+    <div className=" w-auto h-full py-4 pr-2 flex flex-col flex-auto relative">
       <Link to={`/vinyls/${vinyl.id}`}>
-        <h3 className=" w-70 text-lg font-bold hover:text-secondary  mb-2 leading-snug">{vinyl?.title}</h3>
+        <h3 className="text-lg font-bold mb-3 hover:text-secondary leading-snug">{vinyl?.title}</h3>
       </Link>
-      <p className="text-gray-500 text-base mb-5">{vinyl?.artist}</p>
-      <p className="font-secondary text-sm mb-2">
+      <p className="text-gray-500 text-base mb-2">{vinyl?.artist}</p>
+      <p className="font-secondary text-sm">
         ${vinyl?.newPrice} <span className="line-through font-normal ml-3">${vinyl?.oldPrice}</span>
       </p>
-      <button className="btn-primary w-auto px-3 py-1 text-sm space-x-1 flex items-center text-white rounded-md">
-        <PiShoppingCartSimpleBold className="text-base"/>
-        <span>Add to Cart</span>
+      <button className="btn-primary w-auto text-sm sm:text-xs space-x-1 flex items-center text-white rounded-md absolute bottom-5">
+        <PiShoppingCartSimpleBold className="text-lg sm:text-xs"/>
+        <span className="text-sm">Add to Cart</span>
       </button>
     </div>
   </div>

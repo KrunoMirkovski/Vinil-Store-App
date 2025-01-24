@@ -20,19 +20,21 @@
 }
 
 .swiper-button-prev {
-  display: none !important;
+  @apply bg-red-800 p-5 rounded-full z-50 shadow-md;
 }
 .swiper-button-next {
-  @apply bg-white p-5 rounded-full z-50 shadow-md;
+  @apply bg-red-800 p-5 rounded-full z-50 shadow-md;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-size: 16px !important;
+  font-size: 18px !important;
+  font-weight:bolder;
+  color: white;
 }
 
 .btn-primary {
-  @apply bg-primary  px-10 py-2 w-44 rounded-md text-sm font-secondary font-semibold hover:bg-secondary hover:text-white transition-all duration-200 cursor-pointer;
+  @apply bg-primary px-6 py-2 w-36 rounded-md text-sm font-secondary font-semibold hover:bg-secondary hover:text-white transition-all duration-200 cursor-pointer;
 }
 
 .html {

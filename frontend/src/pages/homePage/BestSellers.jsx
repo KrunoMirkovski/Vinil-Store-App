@@ -40,12 +40,13 @@ const BestSellers = () => {
 
   return (
     <div className='py-6 px-6 mb-12'>
-        <h2 className='text-3xl font-semibold mb-5 pl-6'>BestSellers</h2>
+        <h2 className='text-3xl font-bold mb-2 pl-6'>BestSellers</h2>
+        <div className='w-44 h-[4px] bg-primary ml-6 mb-8'></div>
 
     {/*genre filter*/}
-        <div className='mb-16 flex items-center pl-6'>
+        <div className='mb-12 flex items-center pl-6'>
             <select 
-            onChange={(e) => setselectedGenre(e.target.value)} name="genre" id="genre" className='border bg-[#efefef] border-gray-400 rounded-md px-3 py-3 focus:outline-none'>
+            onChange={(e) => setselectedGenre(e.target.value)} name="genre" id="genre" className='border bg-[#efefef] border-gray-400 rounded-md px-3 py-2 focus:outline-none'>
               {
                 genres.map((genre, index) => (
                     <option key={index} value={genre}>{genre}</option>
@@ -74,7 +75,7 @@ const BestSellers = () => {
           },
           1180: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
         }}
         modules={[Pagination, Navigation]}
