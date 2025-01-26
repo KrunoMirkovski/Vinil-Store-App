@@ -20,7 +20,7 @@ const Navbar = () => {
   {/*console.log(dropDownOpen)*/}
 
   return (
-   <header className="max-w-screen-2xl mx-auto px-16 py-5">
+   <header className="max-w-screen-2xl mx-auto px-16 py-4 border-b-2 border-red-600">
     <nav className="flex justify-between items-center">
       {/*left_div*/}
       <div className="flex justify-center items-center md:12 gap-12"> 
@@ -28,7 +28,6 @@ const Navbar = () => {
         <BsFillVinylFill className="size-12"/>
         <h1 className="font-primary font-extrabold text-2xl">Vinyl Store</h1>
         </Link>
-        
       </div>
 
        {/*center_div*/}
