@@ -15,7 +15,7 @@ const dropdownMenu = [
 
 const Navbar = () => {
 
-  const currentUser = true;
+  const currentUser = false;
   const [dropDownOpen, setDropDownOpen] = useState(false)
   {/*console.log(dropDownOpen)*/}
 
