@@ -39,7 +39,7 @@ const Login = () => {
                     <button className="bg-primary hover:bg-secondary text-white font-bold py-2 px-8 rounded focus:outline-none">Login</button>
                 </div>
             </form>
-            <p className='align-baseline font-normal mt-8 mb-3 text-sm'>Don't have an account yet? Register <Link to="/register" className="text-red-800 hover:text-red-500 underline">here</Link> </p>
+            <p className='align-baseline font-normal mt-8 mb-3 text-sm'>Don&apos;t have an account yet? Register <Link to="/register" className="text-red-800 hover:text-red-500 underline">here</Link> </p>
 
             {/* sign in with google*/}
 

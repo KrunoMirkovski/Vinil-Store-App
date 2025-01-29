@@ -5,6 +5,7 @@ import { FaUser } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import avatar from "../assets/avatar.png"
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const dropdownMenu = [
   {name: "Dashboard", href:"/dashboard"},
@@ -16,8 +17,10 @@ const dropdownMenu = [
 const Navbar = () => {
 
   const currentUser = false;
-  const [dropDownOpen, setDropDownOpen] = useState(false)
+  const [dropDownOpen, setDropDownOpen] = useState(false);
   {/*console.log(dropDownOpen)*/}
+  const cartItems = useSelector(state => state.cart.cartItems);
+  console.log(cartItems)
 
   return (
    <header className="max-w-screen-2xl mx-auto px-16 py-4 border-b-2 border-red-600">
@@ -70,9 +73,11 @@ const Navbar = () => {
         </div>
 
       {/* <FaUser className="size-6"/> */}
-      <Link to='/cart' className="bg-secondary p-1 sm:px-6 px-2 py-1 flex items-center">
+      <Link to='/cart' className="bg-secondary p-1 sm:px-6 px-2 py-1 flex items-center text-white gap-2">
       <HiOutlineShoppingBag color="white" className="size-4"/>
-      <span className="text-white px-1 text-sm font-bold sm:ml-1">0</span>
+      {
+            cartItems.length > 0 ?  <span className="text-sm font-semibold sm:ml-1">{cartItems.length}</span> :  <span className="text-sm font-semibold sm:ml-1">0</span>
+      }
       </Link>
       </div>
     </nav>
