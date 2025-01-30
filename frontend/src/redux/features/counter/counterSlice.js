@@ -39,10 +39,18 @@ const cartSlice = createSlice({
           confirmButtonText: "Yes, add one more!",
         });
     },
+    removeFromCart: (state, action) => {
+      state.cartItems = state.cartItems.filter(
+        (item) => item.id !== action.payload.id
+      );
+    },
+    clearCart: (state) => {
+      state.cartItems = [];
+    },
   },
 });
 
 // Export the action creator for adding items to the cart
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, clearCart } = cartSlice.actions;
 // Export the reducer to be used in the store configuration
 export default cartSlice.reducer;
