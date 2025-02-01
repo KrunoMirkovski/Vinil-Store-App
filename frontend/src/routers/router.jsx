@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/homePage/Home";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import CartPage from "../pages/vinylsPage/CartPage";
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register/>
-    }
+     },
+     {
+      path: "/cart",
+      element: <CartPage />
+     }
       ]
  }
   ]);
