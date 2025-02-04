@@ -113,7 +113,7 @@ const CartPage = () => {
           <button
             type="button"
 
-            className="font-medium text-slate-700 hover:text-slate-500 ml-1"
+            className="font-medium text-slate-800 hover:text-slate-500 ml-1 underline"
           >
             Continue Shopping
             <span aria-hidden="true"> &rarr;</span>
