@@ -1,8 +1,22 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const mongoose = require("mongoose");
 require("dotenv").config();
+
+//Defind middleware
+app.use(express.json());
+app.use(
+  cors({
+    origin: ["http://localhost:5173/"],
+    credentials: true,
+  })
+);
+
+//Define routes
+const vinylRoutes = require("./src/vinyls/vinyls.route");
+app.use("/api/vinyls", vinylRoutes);
 
 // Define the server port, using an environment variable if available, otherwise default to 2000
 const port = process.env.PORT || 2000;
