@@ -19,8 +19,14 @@ const vinylSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    oldPrice: Number,
-    newPrice: Number,
+    oldPrice: {
+      type: Number,
+      required: true,
+    },
+    newPrice: {
+      type: Number,
+      required: true,
+    },
     trending: {
       type: Boolean,
       required: true,
