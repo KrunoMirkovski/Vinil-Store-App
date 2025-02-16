@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -10,17 +8,10 @@ import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 import VinylCard from '../vinylsPage/vinylCard';
+import { useGetAllVinylsQuery } from '../../redux/features/vinyls/vinylApi';
 
 const StaffPicks = () => {
-     const [vinyls, setVinyls] = useState([]);
-       
-    
-        useEffect(() => {
-            fetch("vinyls.json")
-            .then(res => res.json())
-            .then((data) => setVinyls(data))
-            .catch((error) => console.error("Error fetching vinyls:", error))
-        }, [])
+     const{data:vinyls = [] } = useGetAllVinylsQuery();
 
   return (
     <div className='py-6 px-6 mb-12'>

@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import VinylCard from '../vinylsPage/vinylCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,33 +10,28 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import { useGetAllVinylsQuery } from '../../redux/features/vinyls/vinylApi';
 
 
 const genres = ["Choose a genre", "Alternative Rock", "Blues", "Classic Rock", "Electronic", "Funk & Soul", "Hip Hop", "Jazz"]
 
 const BestSellers = () => {
-    const [vinyls, setVinyls] = useState([]);
-    const [selectedGenre, setselectedGenre] = useState("Choose a genre");
+   
+    const {data:vinyls, error, isLoading} = useGetAllVinylsQuery();// Fetch vinyl records using RTK Query hook
+      console.log("Vinyls Data:", vinyls);
+      console.log("Error:", error);
+      console.log("Loading:", isLoading);
 
-    useEffect(() => {
-        {/*Fetch vinyls data from JSON*/}
-        fetch("vinyls.json")
-        .then(res => res.json())
-        .then((data) => setVinyls(data))
-        .catch((error) => console.error("Error fetching vinyls:", error))
-    }, [])
+      const [selectedGenre, setselectedGenre] = useState("Choose a genre");// State for storing the selected genre from the dropdown
 
-    {/*console.log(vinyls)*/}
+    if (isLoading) return <p>Loading vinyls...</p>;
+    if (error) return <p>Error fetching vinyls!</p>;
 
     {/*Filter vinyls based on selected genre*/}
     const filteredVinyls = selectedGenre ==="Choose a genre" 
     ? vinyls
     : vinyls.filter(
         (vinyl) => vinyl.genre.toLowerCase() === selectedGenre.toLowerCase())
-
-    console.log(filteredVinyls)
-
-
 
   return (
     <div className='py-6 px-6 mb-12'>

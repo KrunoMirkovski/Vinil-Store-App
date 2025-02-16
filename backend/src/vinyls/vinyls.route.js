@@ -14,7 +14,6 @@ router.post("/create-vinyl", postVinyl);
 
 //get all vinyls
 router.get("/", getAllVinyls);
-module.exports = router;
 
 //get single vinyl
 router.get("/:id", getSingleVinyl);
@@ -24,3 +23,5 @@ router.put("/edit/:id", updateVinyl);
 
 //delete vinyl
 router.delete("/delete/:id", deleteVinyl);
+
+module.exports = router;
