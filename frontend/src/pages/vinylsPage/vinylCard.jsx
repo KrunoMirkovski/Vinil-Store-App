@@ -19,7 +19,7 @@ const VinylCard = ({vinyl}) => {
     className=" min-w-fit border-2 border-red-800 rounded-lg pl-1 flex flex-col sm:flex-row sm:items-center sm:h-52  sm:justify-center gap-1 w-[90%] mx-auto"
   >
     <div className="w-auto h-auto sm:w-44 sm:h-44 flex-shrink-0 rounded-md overflow-hidden mx-auto">
-    <Link to={`/vinyls/${vinyl.id}`}>
+    <Link to={`/vinyls/${vinyl._id}`}>
         <img
           src={`${GetImgUrl(vinyl?.coverImage)}`}
           alt=""
@@ -29,7 +29,7 @@ const VinylCard = ({vinyl}) => {
     </div>
 
     <div className=" w-auto sm:h-full h-auto py-4 pr-2 flex flex-col flex-auto sm:text-left text-center relative">
-      <Link to={`/vinyls/${vinyl.id}`}>
+      <Link to={`/vinyls/${vinyl._id}`}>
         <h3 className="text-lg font-bold mb-3 hover:text-secondary leading-snug">{vinyl?.title}</h3>
       </Link>
       <p className="text-gray-500 text-base mb-2">{vinyl?.artist}</p>
@@ -48,7 +48,7 @@ const VinylCard = ({vinyl}) => {
 
 VinylCard.propTypes = {
     vinyl: PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      _id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       artist: PropTypes.string.isRequired,
       coverImage: PropTypes.string.isRequired,

@@ -5,6 +5,7 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import CartPage from "../pages/vinylsPage/CartPage";
 import Checkout from "../pages/vinylsPage/Checkout";
+import SingleVinyl from "../pages/vinylsPage/SingleVinyl";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
      {
       path: "/checkout",
       element: <Checkout />
+     },
+     {
+      path: "/vinyls/:id",
+      element: <SingleVinyl/>
      }
       ]
  }

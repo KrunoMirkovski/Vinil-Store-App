@@ -26,8 +26,8 @@ const vinylApi = createApi({
       providesTags: ["Vinyls"],
     }),
     // Fetch a single vinyl record by ID
-    getSingleVinyl: builder.query({
-      query: (id) => `/${id}`,
+    getVinylById: builder.query({
+      query: (id) => `${id}`,
       providesTags: (result, error, id) => [{ type: "Vinyls", id }],
     }),
     // Create a new vinyl record
@@ -65,7 +65,7 @@ const vinylApi = createApi({
 // Export hooks for each endpoint, allowing components to interact with the API
 export const {
   useGetAllVinylsQuery,
-  useGetSingleVinylQuery,
+  useGetVinylByIdQuery,
   usePostVinylMutation,
   useUpdateVinylMutation,
   useDeleteVinylMutation,
