@@ -17,7 +17,7 @@ const SingleVinyl = () => {
     if(isLoading) return <div>Loading...</div>
     if(isError) return <div>Error fetching vinyl details!</div>
   return (
-    <div className="flex justify-center items-center min-h-80 pt-20">
+    <div className="flex justify-center items-center h-[calc(100vh-50px)] bg-gradient-to-br from-[#851203] via-[#C5001A] to-[#031954]">
             <div className="bg-white shadow-lg rounded-lg p-8 w-3/5 flex gap-8 relative">
                 <div className="w-[50%]">
                     <img
