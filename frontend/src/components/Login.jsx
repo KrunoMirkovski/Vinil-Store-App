@@ -1,12 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 import { useForm } from "react-hook-form"
+import { useAuth } from "../context/AuthContext";
 
 
 const Login = () => {
 
+    // State to store error messages
     const [message, setMessage] = useState("")
+    // Destructuring authentication functions from context
+    const {loginUser, signInWithGoogle} = useAuth()
+    // Hook for programmatic navigation
+    const navigate = useNavigate()
+    // React Hook Form for handling form validation
     const {
         register,
         handleSubmit,
@@ -14,9 +21,27 @@ const Login = () => {
         formState: { errors },
       } = useForm()
 
-      const onSubmit = (data) => console.log(data)
-
-      const handleGoogleSignIn = async () => {
+     // Function to handle form submission for email/password login
+    const onSubmit = async (data) => {
+        try {
+            await loginUser(data.email, data.password);
+            alert("Login successful!");
+            navigate("/")
+        } catch (error) {
+            setMessage("Yor email and password are not valid") 
+            console.error(error)
+        }
+      }
+    // Function to handle Google sign-in
+    const handleGoogleSignIn = async () => {
+        try {
+            await signInWithGoogle();
+            alert("Successful login with Google!");
+            navigate("/")
+        } catch (error) {
+            alert("Login with Google has failed");
+            console.error(error)
+        }
       }
 
   return (

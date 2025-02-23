@@ -6,6 +6,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import avatar from "../assets/avatar.png"
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { useAuth } from "../context/AuthContext";
 
 const dropdownMenu = [
   {name: "Dashboard", href:"/dashboard"},
@@ -16,12 +17,20 @@ const dropdownMenu = [
 
 const Navbar = () => {
 
-  const currentUser = false;
+    // State to control dropdown menu visibility
   const [dropDownOpen, setDropDownOpen] = useState(false);
   {/*console.log(dropDownOpen)*/}
+
+  // Fetching cart items from Redux store
   const cartItems = useSelector(state => state.cart.cartItems);
   console.log(cartItems)
 
+  // Getting authentication state and logout function from context
+  const {currentUser, logout} = useAuth()
+   // Function to handle user logout
+  const handleLogOut = () => {
+    logout()
+  }
   return (
    <header className="max-w-screen-2xl mx-auto px-16 py-4 border-b-2 border-red-600">
     <nav className="flex justify-between items-center">
@@ -64,6 +73,9 @@ const Navbar = () => {
                                 </li>
                             ))
                         }
+                         <li>
+                              <button onClick={handleLogOut} className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100">Logout</button>
+                        </li>
                     </ul>
                 </div>
             )
