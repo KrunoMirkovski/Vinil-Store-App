@@ -6,6 +6,7 @@ import Register from "../components/Register";
 import CartPage from "../pages/vinylsPage/CartPage";
 import Checkout from "../pages/vinylsPage/Checkout";
 import SingleVinyl from "../pages/vinylsPage/SingleVinyl";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
      },
      {
       path: "/checkout",
-      element: <Checkout />
+      element: <PrivateRoute><Checkout/></PrivateRoute>
      },
      {
       path: "/vinyls/:id",

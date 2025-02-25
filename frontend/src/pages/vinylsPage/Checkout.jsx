@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom"
+import { useAuth } from "../../context/AuthContext";
 
 const Checkout = () => {
     // Access cart items from Redux store
@@ -9,7 +10,7 @@ const Checkout = () => {
     // Calculate total price of items in the cart
     const totalPrice = cartItems.reduce((acc, item) => acc + item.newPrice, 0).toFixed(2);
     // Temporary user object (Replace with actual authentication
-    const currentUser = { email: "user@example.com" }; 
+    const {currentUser} = useAuth(); 
      // Initialize form handling with react-hook-form
     const { register, handleSubmit, formState: { errors }} = useForm();
     // Checkbox state to enable 'Place an Order' button
@@ -35,7 +36,7 @@ const Checkout = () => {
 
   return (
     <section>
-        <div className="min-h-screen p-6 flex items-center justify-center bg-white">
+        <div className="min-h-screen p-6 flex items-center justify-center bg-gradient-to-br from-[#851203] via-[#C5001A] to-[#031954]">
             <div className="container max-w-screen-lg mx-auto">
                 <div>
                     <div className="bg-white rounded shadow-lg p-2 px-4 md:p-8 mb-6">
