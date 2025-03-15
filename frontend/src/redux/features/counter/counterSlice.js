@@ -14,7 +14,7 @@ const cartSlice = createSlice({
     // Reducer function to handle adding items to the cart
     addToCart: (state, action) => {
       const existingItem = state.cartItems.find(
-        (item) => item.id === action.payload.id
+        (item) => item._id === action.payload._id
       );
       if (!existingItem) {
         state.cartItems.push(action.payload);
@@ -41,7 +41,7 @@ const cartSlice = createSlice({
     },
     removeFromCart: (state, action) => {
       state.cartItems = state.cartItems.filter(
-        (item) => item.id !== action.payload.id
+        (item) => item._id !== action.payload._id
       );
     },
     clearCart: (state) => {

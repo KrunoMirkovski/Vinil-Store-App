@@ -46,7 +46,7 @@ const CartPage = () => {
                     {/* Map through cart items and display them */}
                     {
                       cartItems.map((product) => (
-                            <li key={product.id} className="flex py-6">
+                            <li key={product._id} className="flex py-6">
                                 {/* Product Image */}
                       <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                         <img

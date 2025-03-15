@@ -48,7 +48,7 @@ const VinylCard = ({vinyl}) => {
 
 VinylCard.propTypes = {
     vinyl: PropTypes.shape({
-      _id: PropTypes.number.isRequired,
+      _id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       artist: PropTypes.string.isRequired,
       coverImage: PropTypes.string.isRequired,

@@ -7,6 +7,7 @@ import CartPage from "../pages/vinylsPage/CartPage";
 import Checkout from "../pages/vinylsPage/Checkout";
 import SingleVinyl from "../pages/vinylsPage/SingleVinyl";
 import PrivateRoute from "./PrivateRoute";
+import OrderPage from "../pages/vinylsPage/OrderPage";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/orders",
-            element: <div>Orders</div>
+            element: <PrivateRoute><OrderPage/></PrivateRoute>
         },
         {
             path: "/about",
