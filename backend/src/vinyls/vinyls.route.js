@@ -7,10 +7,11 @@ const {
   updateVinyl,
   deleteVinyl,
 } = require("./vinyl.controller");
+const verifyToken = require("../middleware/verifyToken");
 const router = express.Router();
 
 //post new vinyl
-router.post("/create-vinyl", postVinyl);
+router.post("/create-vinyl", verifyToken, postVinyl);
 
 //get all vinyls
 router.get("/", getAllVinyls);
@@ -19,9 +20,9 @@ router.get("/", getAllVinyls);
 router.get("/:id", getSingleVinyl);
 
 //update vinyl
-router.put("/edit/:id", updateVinyl);
+router.put("/edit/:id", verifyToken, updateVinyl);
 
 //delete vinyl
-router.delete("/delete/:id", deleteVinyl);
+router.delete("/delete/:id", verifyToken, deleteVinyl);
 
 module.exports = router;

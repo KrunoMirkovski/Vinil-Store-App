@@ -17,8 +17,10 @@ app.use(
 //Define routes
 const vinylRoutes = require("./src/vinyls/vinyls.route");
 const orderRoutes = require("./src/orders/order.route");
+const userRoutes = require("./src/users/user.route");
 app.use("/api/vinyls", vinylRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/auth", userRoutes);
 
 // Define the server port, using an environment variable if available, otherwise default to 2000
 const port = process.env.PORT || 2000;

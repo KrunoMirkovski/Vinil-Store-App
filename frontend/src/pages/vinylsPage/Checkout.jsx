@@ -39,7 +39,9 @@ const Checkout = () => {
         };
 
         try {
-            await createOrder(newOrder).unwrap();
+            await createOrder(newOrder).unwrap();// Call the createOrder mutation and wait for it to finish
+
+            // Show success alert on successful order placement
             Swal.fire({
                 title: "Confirmed Order",
                 text: "Your order placed successfully!",
@@ -49,13 +51,14 @@ const Checkout = () => {
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Yes, It's Okay!"
               });
+              // Redirect user to the orders page
               navigate("/orders")
         } catch (error) {
               console.error("Error creating an order", error);
             alert("Failed to place an order")
         }
      };
-
+     // Show loading indicator if order is being processed
      if(isLoading) return <div>Loading....</div>
   return (
     <section>
