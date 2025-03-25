@@ -57,6 +57,7 @@ const vinylApi = createApi({
         url: `/${id}`,
         method: "DELETE",
       }),
+      responseHandler: (response) => response.text(),
       invalidatesTags: ["Vinyls"],
     }),
   }),

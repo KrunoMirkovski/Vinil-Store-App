@@ -10,6 +10,11 @@ import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../pages/vinylsPage/OrderPage";
 import AdminLogin from "../components/AdminLogin";
 import AdminRoute from "./AdminRoute";
+import DashboardLayout from "../pages/dashboardPage/DashboardLayout";
+import DashboardHome from "../pages/dashboardPage/DashboardHome";
+import ManageVinyls from "../pages/dashboardPage/manageVinyls/ManageVinyls";
+import AddVinyl from "../pages/dashboardPage/addVinyl/addVinyl";
+import UpdateVinyl from "../pages/dashboardPage/updateVinyl/UpdateVinyl";
 
 
 const router = createBrowserRouter([
@@ -20,7 +25,6 @@ const router = createBrowserRouter([
         {
              path: "/",
              element:<Home/>,
-
         },
         {
             path: "/orders",
@@ -56,32 +60,33 @@ const router = createBrowserRouter([
   path: "/admin",
   element: <AdminLogin/>
 },
+
 {
   path: "/dashboard",
   element: <AdminRoute>
-     <div>Dashboard</div>
+     <DashboardLayout/>
   </AdminRoute>,
   children:[
     {
       path: "",
-      element: <AdminRoute><div>Dashboard Home</div></AdminRoute>
+      element: <AdminRoute><DashboardHome/></AdminRoute>
     },
     {
       path: "add-new-vinyl",
       element: <AdminRoute>
-         <div>Add New Vinyl</div>
+         <AddVinyl />
       </AdminRoute>
     },
     {
       path: "edit-vinyl/:id",
       element: <AdminRoute>
-         <div>Edit Vinyl</div>
+          <UpdateVinyl/>
       </AdminRoute>
     },
     {
       path: "manage-vinyls",
       element: <AdminRoute>
-        <div>Manage Vinyls</div>
+        <ManageVinyls />
       </AdminRoute>
     }
   ]
